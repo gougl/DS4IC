@@ -56,5 +56,13 @@ void arraylist<T>::display(){
 		cout << data[i] << endl;
 }
 
+
+template<typename T>
+T arraylist<T>::del(int pos){
+	T e = data[pos];
+	for(int i = pos;i<length;i++)
+		data[i] = data[i+1];
+	return e;
+}
 #endif
 

@@ -12,5 +12,9 @@ int main(){
 	arr.insert(0,'b');
 	arr.insert(0,'c');
 	arr.display();
+
+	cout << "the delete the element of index 1 is "<<arr.del(1)<<endl;
+	cout << "the rest is " << endl;
+	arr.display();
 	cout << "this is first g++ program" << endl;
 }
