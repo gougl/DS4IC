@@ -1,6 +1,7 @@
 #include <iostream>
 #include "hello.h"
 #include "arraylist.h"
+#include "linkedlist.h"
 using namespace std;
 
 int main(){
@@ -17,4 +18,8 @@ int main(){
 	cout << "the rest is " << endl;
 	arr.display();
 	cout << "this is first g++ program" << endl;
+	
+	linkedlist<int> ls;
+	ls.insert_head(1);
+	ls.display();
 }
