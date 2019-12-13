@@ -21,5 +21,10 @@ int main(){
 	
 	linkedlist<int> ls;
 	ls.insert_head(1);
+	ls.insert_head(2);
+	ls.insert_head(3);
+	ls.display();
+	cout << "delete the first elem of linkedlist is " << ls.del_first();
+	cout << "the rest is " << endl;
 	ls.display();
 }

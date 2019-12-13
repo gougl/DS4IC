@@ -61,7 +61,18 @@ void linkedlist<T>::insert_head(T e){
 	
 }
 
-
+template<typename T>
+T linkedlist<T>::del_first(){
+	node<T> *q = head->next;
+	T e = q->data;
+	if(!q->next || !q)
+		head->next = NULL;
+	else
+		head->next = q->next;
+	free(q);
+	return e;
+	
+}
 template<typename T>
 void linkedlist<T>::display(){
 	node<T> *p = head->next;
