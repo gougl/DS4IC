@@ -2,6 +2,7 @@
 #include "hello.h"
 #include "arraylist.h"
 #include "linkedlist.h"
+#include "arraystack.h"
 using namespace std;
 
 int main(){
@@ -27,4 +28,12 @@ int main(){
 	cout << "delete the first elem of linkedlist is " << ls.del_first();
 	cout << "the rest is " << endl;
 	ls.display();
+
+
+	arraystack<char> s;
+	cout << s.isEmpty() << endl;
+	s.push('s');
+	s.push('t');
+	cout << s.pop() << endl;
+	cout << s.pop() << endl;
 }
