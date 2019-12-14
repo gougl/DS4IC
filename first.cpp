@@ -3,6 +3,7 @@
 #include "arraylist.h"
 #include "linkedlist.h"
 #include "arraystack.h"
+#include "linkedstack.h"
 using namespace std;
 
 int main(){
@@ -19,7 +20,7 @@ int main(){
 	cout << "the rest is " << endl;
 	arr.display();
 	cout << "this is first g++ program" << endl;
-	
+
 	linkedlist<int> ls;
 	ls.insert_head(1);
 	ls.insert_head(2);
@@ -29,11 +30,16 @@ int main(){
 	cout << "the rest is " << endl;
 	ls.display();
 
-
 	arraystack<char> s;
 	cout << s.isEmpty() << endl;
 	s.push('s');
 	s.push('t');
 	cout << s.pop() << endl;
 	cout << s.pop() << endl;
+
+	linkedstack<char> st;
+	st.push('x');
+	st.push('y');
+	cout << st.pop() << endl;
+	cout << st.pop() << endl;
 }
