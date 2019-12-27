@@ -4,6 +4,8 @@
 #include "linkedlist.h"
 #include "arraystack.h"
 #include "linkedstack.h"
+#include "honoi.h"
+#include "arrayqueue.h"
 using namespace std;
 
 int main(){
@@ -42,4 +44,16 @@ int main(){
 	st.push('y');
 	cout << st.pop() << endl;
 	cout << st.pop() << endl;
+	
+	arrayqueue<int> arrque;
+	arrque.enqueue(5);
+	arrque.enqueue(6);
+	cout << arrque.outqueue() << endl;
+	cout << arrque.outqueue() << endl;
+	//cout << "Plz input the number of discs for honoi :" << endl;
+	//int n;
+	//cin >> n;
+	//functionInhonoi();
+	//honoi(n,'a','b','c');
+
 }
