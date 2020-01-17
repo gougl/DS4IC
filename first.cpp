@@ -4,8 +4,10 @@
 #include "linkedlist.h"
 #include "arraystack.h"
 #include "linkedstack.h"
-#include "honoi.h"
+//#include "honoi.h"
 #include "arrayqueue.h"
+#include "fromMac16.h"
+
 using namespace std;
 
 int main(){
@@ -55,5 +57,5 @@ int main(){
 	//cin >> n;
 	//functionInhonoi();
 	//honoi(n,'a','b','c');
-
+	output();
 }
