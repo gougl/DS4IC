@@ -1,4 +1,5 @@
 #include <iostream>
+#include "allinone.h"
 #include "hello.h"
 #include "arraylist.h"
 #include "linkedlist.h"

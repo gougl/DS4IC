@@ -7,17 +7,13 @@
         
         
         {
-            "preLaunchTask": "build c++",
+            "preLaunchTask": "clang++ build active file",
             "name": "(lldb) 启动",
-            "type": "cppdbg",
+            "type": "lldb",
             "request": "launch",
-            "program": "输入程序名称，例如 ${workspaceFolder}/a.out",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}.out",
             "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "lldb"
+            "cwd": "${workspaceFolder}"
         }
     ]
 }

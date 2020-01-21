@@ -25,25 +25,27 @@
     ]
     */
     
-        "label": "build c++",
-        "type": "shell",
-        "command": "g++",
-        "args": [
-            "${file}",
-            "-std=c++17",
-            "-o",
-            "${workspaceFolder}/temp/${fileBasenameNoExtension}.out",
-            "-g"
+
+        "tasks": [
+            {
+                "type": "shell",
+                "label": "clang++ build active file",
+                "command": "/usr/bin/clang++",
+                "args": [
+                    "-g",
+                    "${file}",
+                    "-o",
+                    "${fileDirname}/${fileBasenameNoExtension}.out"
+                ],
+                "options": {
+                    "cwd": "/usr/bin"
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "group": "build"
+            }
         ],
-        "group": "build",
-        "presentation": {
-            "echo": true,
-            "focus": false,
-            "panel":"shared",
-            "showReuseMessage": true,
-            "clear": false,
-            "reveal": "silent"
-        },
         /*
         "tasks": [
             {
