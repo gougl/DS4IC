@@ -8,7 +8,7 @@
 //#include "honoi.h"
 #include "arrayqueue.h"
 #include "fromMac16.h"
-
+#include "binarytree.h"
 using namespace std;
 
 int main(){
@@ -59,4 +59,14 @@ int main(){
 	//functionInhonoi();
 	//honoi(n,'a','b','c');
 	output();
+
+	btree<char> *bt = new btree<char>();
+	bt->setRoot('a');
+	cout << bt->getRootData() << endl;
+	btnode<char> *rootNode = bt->getRoot();
+	bt->setLchild(rootNode,'b');
+	bt->setRchild(rootNode,'c');	
+
+
+
 }
